@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loader">
+        <h3><b>I </b> Design</h3>
+        <h3>Develop,</h3>
+        <h3>Deploy "</h3>
+    </div>
+    <div id="cursor"></div>
+    <div id="content" style="opacity: 0;">
+        <div id="nav">
+            <h3><a href="#page1" data-scroll-to="#page1">Ashutosh</a></h3>
+            <div id="nav-part2">
+                <h4><a href="#page2" data-scroll-to="#page2">Education</a></h4>
+                <h4><a href="#page3" data-scroll-to="#page3">Work</a></h4>
+                <h4><a href="#page4" data-scroll-to="#page4">Projects</a></h4>
+                <h4><a href="#page5" data-scroll-to="#page5">Skills</a></h4>
+            </div>
+            <div id="nav-part3">
+                <div id="circle"></div>
+            </div>
+        </div>
+    </div>
+    <div id="main" data-scroll-container>
+        <div id="page1">
+            <div id="page1-container">
+                <div id="profile-desc">
+                    <h2>Hie, It's me</h2>
+                    <h1>Ashutosh Tripathy</h1>
+                    <div id="dotted"></div>
+
+                    <div id="profile-dets" >
+                        <h4>I work on 3D.</h4>
+                        <h3>Design, Development, Deployment</h3>
+                        <p>I work on variable projects. Want to talk ?</p>
+                        <div id="profile-dets-buttons">
+                            <button>Let's Talk</button>
+                            <button data-scroll-to="#page6">Contact</button>
+                            <button>Resume</button>
+                        </div>
+                    </div>
+                    <div id="follow-us">
+                        <h3>Follow Me</h3>
+                        <div id="social-icons">
+                            <a href="#" aria-label="Facebook" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" aria-label="Instagram" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" aria-label="X" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" aria-label="LinkedIn" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" aria-label="GitHub" class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>                        
+                    </div>
+                </div>
+                <div id="profile" data-scroll data-scroll-speed="1.5">
+                    <img src="/media/images/20241018_131359.jpg" alt="Image">
+                </div>
+            </div>
+        </div>
+
+        <div id="page2">
+            <h1 class="education-heading" data-scroll data-scroll-speed="0.4">Education</h1>
+            <div class="education-section" id="matriculation">
+                <h2>Matriculation</h2>
+                <p>Adarsha Vidya Mandir, Rourkela, Odisha (2018)</p>
+            </div>
+            <div class="education-section" id="intermediate">
+                <h2>Intermediate</h2>
+                <p><b>Government Autonomous College</b>, Rourkela, Odisha (2018-2020)</p>
+                <p>Stream: <b>Science</b></p>
+            </div>
+            <div class="education-section" id="bachelors">
+                <h2>Bachelor's Degree</h2>
+                <p><b>National Institute of Science & Technology</b>, Brahmapur, Odisha (2020-2024)</p>
+                <p>Branch: <b>Computer Science Engineering</b></p>
+            </div>
+        </div>
+        
+        <div id="page3">
+            <section id="work-experience">
+                <h2 class="work-experience-heading">Work Experience</h2>
+                <div class="work-entry">
+                    <h3>Internshala: Fullstack Development (Internship/Course)</h3>
+                    <p><strong>Work Details:</strong> Learned HTML, CSS, JS, PHP</p>
+                    <p><strong>Project:</strong> E-commerce Website</p>
+                </div>
+        
+                <div class="work-entry">
+                    <h3>Internship Studio: AWS DevOps Intern (Internship)</h3>
+                    <p><strong>Work Details:</strong> AWS tools usage and application deployment on AWS, containerization using Docker.</p>
+                </div>
+        
+                <div class="work-entry">
+                    <h3>F13 Technology: AWS Cloud Intern (Internship)</h3>
+                    <p><strong>Work Details:</strong> AWS tools usage (AWS EC2, AWS SageMaker, SQS, and more), case studies about BMW, TIBCO, and their cloud migration.</p>
+                    <p><strong>Projects:</strong></p>
+                    <ul>
+                        <h5>AWS service recommender</h5>
+                        <h5>HR management system for managing employee details and onboarding process</h5>
+                    </ul>
+                </div>
+            </section>
+        </div>        
+
+        <div id="page4">
+            <h2 class="section-heading" data-scroll data-scroll-speed="2">My Projects</h2>
+            <div class="projects-container" data-scroll data-scroll-speed="2">
+                <div class="project-card" id="project1">
+                    <h3><a href="#">Project 1</a></h3>
+                    <img src="https://images.unsplash.com/photo-1579389083046-e3df9c2b3325?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D" alt="Project 1">
+                    <div class="project-description">
+                        <p>Description: An e-commerce website built with HTML, CSS, JS, and PHP.</p>
+                        <p class="skills">Skills: HTML, CSS, JavaScript, PHP</p>
+                    </div>
+                </div>
+                <div class="project-card" id="project2">
+                    <h3><a href="#">Project 2</a></h3>
+                    <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbXB1dGVyfGVufDB8fDB8fHww" alt="Project 2">
+                    <div class="project-description">
+                        <p>Description: A responsive portfolio site.</p>
+                        <p class="skills">Skills: HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+                <div class="project-card" id="project3">
+                    <h3><a href="#">Project 3</a></h3>
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 3">
+                    <div class="project-description">
+                        <p>Description: A blog platform using PHP and MySQL.</p>
+                        <p class="skills">Skills: PHP, MySQL, CSS</p>
+                    </div>
+                </div>
+                <div class="project-card" id="project4">
+                    <h3><a href="#">Project 4</a></h3>
+                    <img src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvbXB1dGVyfGVufDB8fDB8fHww" alt="Project 4">
+                    <div class="project-description">
+                        <p>Description: A weather forecasting application.</p>
+                        <p class="skills">Skills: JavaScript, API</p>
+                    </div>
+                </div>
+                <div class="project-card" id="project5">
+                    <h3><a href="#">Project 5</a></h3>
+                    <img src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGNvbXB1dGVyfGVufDB8fDB8fHww" alt="Project 5">
+                    <div class="project-description">
+                        <p>Description: A social media application.</p>
+                        <p class="skills">Skills: React, Node.js</p>
+                    </div>
+                </div>
+                <div class="project-card" id="project6">
+                    <h3><a href="#">Project 6</a></h3>
+                    <img src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 6">
+                    <div class="project-description">
+                        <p>Description: A task management tool.</p>
+                        <p class="skills">Skills: Angular, Firebase</p>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-container" data-scroll data-scroll-speed="2">
+                <button class="view-more-btn"><a href="#">View More Projects</a></button>
+            </div>
+        </div>
+          
+        <div id="page5">
+            <h1>TechStack</h1>
+            <div class="skills-container">
+                <div class="skills-column">
+                    <div class="skills-section" id="programming-languages">
+                        <h2>Programming Languages</h2>
+                        <div class="skills-buttons">
+                            <button class="skill-btn">
+                                <img src="https://img.icons8.com/?size=100&id=40670&format=png&color=000000" alt="C" class="skill-icon"> C
+                            </button>
+                            <button class="skill-btn">
+                                <img src="https://img.icons8.com/?size=100&id=13679&format=png&color=000000" alt="java" class="skill-icon">Java
+                            </button>
+                            <button class="skill-btn">
+                                <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" alt="python" class="skill-icon"> Python
+                            </button>
+                            <button class="skill-btn">
+                                <img src="https://img.icons8.com/?size=100&id=NAL2lztANaO6&format=png&color=000000" alt="Rust" class="skill-icon"> C
+                            </button>
+                        </div>
+                    </div>
+                    <div class="skills-section" id="devops-cloud">
+                        <h2>DevOps & Cloud</h2>
+                        <div class="skills-buttons">
+                            <button class="skill-btn">
+                                <img src="https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000" alt="Docker" class="skill-icon"> Docker
+                            </button>
+                            <button class="skill-btn">
+                                <img src="https://img.icons8.com/?size=100&id=cvzmaEA4kC0o&format=png&color=000000" alt="Kubernetes" class="skill-icon">Kubernetes
+                            </button>
+                            <button class="skill-btn">
+                                <img src="https://img.icons8.com/?size=100&id=38389&format=png&color=000000" alt="Git" class="skill-icon">Git
+                            </button>
+                            <button class="skill-btn">
+                                <img src="https://img.icons8.com/?size=100&id=33039&format=png&color=000000" alt="AWS" class="skill-icon">AWS
+                            </button>
+                            <button class="skill-btn">
+                                <img src="https://img.icons8.com/?size=100&id=WHRLQdbEXQ16&format=png&color=000000" alt="GCP" class="skill-icon">GCP
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-column">
+                    <div class="skills-section" id="frontend">
+                        <h2>Frontend</h2>
+                        <div class="skills-buttons">
+                            <button class="skill-btn">
+                                <img src="https://img.icons8.com/?size=100&id=1043&format=png&color=000000" alt="HTML" class="skill-icon">HTML
+                            </button>
+                            <button class="skill-btn">
+                                <img src="https://img.icons8.com/?size=100&id=4PiNHtUJVbLs&format=png&color=000000" alt="CSS" class="skill-icon">CSS
+                            </button>
+                            <button class="skill-btn">
+                                <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JS" class="skill-icon">GSAP Js
+                            </button>
+                        </div>
+                    </div>
+                    <div class="skills-section" id="backend">
+                        <h2>Backend</h2>
+                        <div class="skills-buttons">
+                            <button class="skill-btn">
+                                <img src="https://img.icons8.com/?size=100&id=MHcMYTljfKOr&format=png&color=000000" alt="Flask" class="skill-icon">Flask
+                            </button>
+                            <button class="skill-btn">
+                                <img src="https://img.icons8.com/?size=100&id=AksudKrBQryM&format=png&color=000000" alt="Django" class="skill-icon">Django
+                            </button>
+                            <button class="skill-btn">
+                                <img src="https://img.icons8.com/?size=100&id=8305&format=png&color=000000" alt="" class="skill-icon"> SQL
+                            </button>
+                            <button class="skill-btn">
+                                <img src="https://img.icons8.com/?size=100&id=74402&format=png&color=000000" alt="" class="skill-icon"> MongoDB
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page6">
+            <div class="stars" id="starsContainer"></div>
+            <div class="contact-form-container">
+                <h2>Contact me</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Name</label>
+                        <span class="underline-animation"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                        <span class="underline-animation"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                        <span class="underline-animation"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="contact-number" name="contact-number" pattern="[0-9]{10}" required>
+                        <label for="contact-number">Contact Number</label>
+                        <span class="underline-animation"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <label for="message">Message</label>
+                        <span class="underline-animation"></span>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>                
+            </div>
+            <div class="copyright">
+                &copy; 2024 Ashutosh. All rights reserved.
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
