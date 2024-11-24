@@ -546,6 +546,7 @@ body {
     top: 0;
     left: 0;
     z-index: 2;
+    mix-blend-mode: difference;
 }
 
 .project-card img {
