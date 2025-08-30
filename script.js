@@ -583,7 +583,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-//contact
-
 
 ScrollTrigger.refresh();

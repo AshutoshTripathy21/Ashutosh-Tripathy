@@ -256,10 +256,6 @@ body {
 }
 
 #profile-dets-buttons button:hover {
-    
-}
-
-#profile-dets-buttons button:hover {
     background-color: white;
     color: #03e9f4;
     cursor: none;
@@ -469,7 +465,7 @@ body {
 }
 
 #page4{
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100%;
     position: relative;
     z-index: 9;
@@ -497,12 +493,22 @@ body {
     margin-top: 2vw;
 }
 
-
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 5vw;
+    /* padding: 2vw; */
 }
+
+/* #moreProjectsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4vw;
+    padding: 2vw;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+} */
 
 .view-more-container {
     margin-top: 20px;
