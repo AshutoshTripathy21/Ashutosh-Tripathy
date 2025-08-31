@@ -383,6 +383,38 @@ var t6 = gsap.timeline({
 
 gsap.registerPlugin(ScrollTrigger);
 
+if (window.innerWidth > 768) {
+    // 🖥️ Desktop Animation
+    var projectsTimeline = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#page4",
+            scroller: "#main",
+            start: "top 100%",
+            end: "bottom 10%",
+            scrub: 2,
+        }
+    });
+
+    projectsTimeline.to("#page4 .section-heading", { y: -30, opacity: 1 }, "projects-sections");
+
+    // Animate projects one by one
+    for (let i = 1; i <= 9; i++) {
+        projectsTimeline.to(`#project${i}`, {
+            opacity: 1,
+            y: 0,
+            duration: 1
+        }, `projects-sections+=${i * 0.5}`)
+        .to(`#project${i}`, {
+            opacity: 0,
+            y: 20,
+            duration: 1
+        }, `projects-sections+=${i + 4}`);
+    }
+
+    projectsTimeline.to("#page4 .view-more-btn", { y: -30, opacity: 1 }, "projects-sections+=5");
+
+}
+
 var projectsTimeline = gsap.timeline({
     scrollTrigger: {
         trigger: "#page4",
@@ -499,6 +531,34 @@ var t7 = gsap.timeline({
 
 gsap.registerPlugin(ScrollTrigger);
 
+if (window.innerWidth > 768) {
+    // 🖥️ Desktop Animation (sequential fade-in/out)
+    var skillsTimeline = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#page5",
+            scroller: "#main", 
+            start: "top 100%",
+            end: "bottom 40%", 
+            scrub: 2,
+        }
+    });
+
+    skillsTimeline.to("#page5 h1", { y: -30, opacity: 1 }, "skills-sections");
+
+    skillsTimeline.to("#programming-languages", { opacity: 1, y: 0, duration: 1 }, "skills-sections")
+        .to("#programming-languages", { opacity: 0, y: 20, duration: 1 }, "skills-sections+=4");
+
+    skillsTimeline.to("#devops-cloud", { opacity: 1, y: 0, duration: 1 }, "skills-sections+=0.5")
+        .to("#devops-cloud", { opacity: 0, y: 20, duration: 1 }, "skills-sections+=4.5");
+  
+    skillsTimeline.to("#frontend", { opacity: 1, y: 0, duration: 1 }, "skills-sections+=1")
+        .to("#frontend", { opacity: 0, y: 20, duration: 1 }, "skills-sections+=5");
+
+    skillsTimeline.to("#backend", { opacity: 1, y: 0, duration: 1 }, "skills-sections+=1.5")
+        .to("#backend", { opacity: 0, y: 20, duration: 1 }, "skills-sections+=5.5");
+
+}
+
 var skillsTimeline = gsap.timeline({
     scrollTrigger: {
         trigger: "#page5",
@@ -573,7 +633,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     const starsContainer = document.getElementById("starsContainer");
-    for (let i = 0; i < 100; i++) {
+    const starCount = window.innerWidth <= 480 ? 40 : 100; // fewer stars on mobile
+
+    for (let i = 0; i < starCount; i++) {
         const star = document.createElement("div");
         star.className = "star";
         star.style.left = Math.random() * 100 + "vw";
@@ -582,6 +644,7 @@ document.addEventListener("DOMContentLoaded", function () {
         starsContainer.appendChild(star);
     }
 });
+
 
 
 ScrollTrigger.refresh();
